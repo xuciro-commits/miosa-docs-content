@@ -1,0 +1,268 @@
+{
+	"categories": [
+		{
+			"id": "core",
+			"name": "Core primitives",
+			"description": "The building blocks: workspaces, sandboxes, computers and deployments."
+		},
+		{
+			"id": "organization",
+			"name": "Organization",
+			"description": "How people, workspaces and permissions fit together."
+		},
+		{
+			"id": "networking",
+			"name": "Networking and domains",
+			"description": "Connect a running process to the people who need it."
+		},
+		{
+			"id": "data",
+			"name": "Data",
+			"description": "Choose what survives a restart, and where it belongs."
+		},
+		{
+			"id": "agents",
+			"name": "Agents",
+			"description": "Separate the model, the harness, the tools and the machine."
+		},
+		{
+			"id": "runtimes",
+			"name": "Runtimes",
+			"description": "Understand the environment your code runs inside."
+		},
+		{
+			"id": "billing",
+			"name": "Billing and usage",
+			"description": "Read resource usage and distinguish it from credit balance."
+		},
+		{
+			"id": "builders",
+			"name": "Platform builders",
+			"description": "Build a product that gives each customer the right boundaries."
+		}
+	],
+	"terms": [
+		{
+			"word": "Workspace",
+			"category": "core",
+			"definition": "A named boundary that groups resources and the people allowed to use them.",
+			"example": "Keep your staging sandboxes in a different workspace from production."
+		},
+		{
+			"word": "Sandbox",
+			"category": "core",
+			"definition": "An isolated, disposable environment for running code and tools.",
+			"example": "Create a sandbox to test an app before you publish it."
+		},
+		{
+			"word": "Computer",
+			"category": "core",
+			"definition": "A machine with a desktop that a person or an agent can operate.",
+			"example": "An agent opens a browser on a computer to complete a visual task."
+		},
+		{
+			"word": "Deployment",
+			"category": "core",
+			"definition": "A published application version running at a stable address.",
+			"example": "Publish your tested sandbox application as a deployment."
+		},
+		{
+			"word": "Organization",
+			"category": "organization",
+			"definition": "The top-level group that owns workspaces, membership and billing.",
+			"example": "Your company owns one organization with several team workspaces."
+		},
+		{
+			"word": "Member",
+			"category": "organization",
+			"definition": "A person who belongs to an organization and has an assigned role.",
+			"example": "Invite a teammate as a viewer before granting write access."
+		},
+		{
+			"word": "Role",
+			"category": "organization",
+			"definition": "A named collection of permissions that governs what someone can do.",
+			"example": "A read-only role can inspect a resource without changing it."
+		},
+		{
+			"word": "Domain",
+			"category": "networking",
+			"definition": "A human-readable name that routes traffic to an application.",
+			"example": "Connect app.example.com after verifying your deployment."
+		},
+		{
+			"word": "Preview",
+			"category": "networking",
+			"definition": "A temporary address for inspecting work before it becomes a release.",
+			"example": "Share the preview with a reviewer before promoting the release."
+		},
+		{
+			"word": "Port",
+			"category": "networking",
+			"definition": "A numbered endpoint on a machine where a process accepts connections.",
+			"example": "Your development server listens on port 3000."
+		},
+		{
+			"word": "Volume",
+			"category": "data",
+			"definition": "Persistent filesystem storage that can outlive the process using it.",
+			"example": "Mount a volume for files that must survive a restart."
+		},
+		{
+			"word": "Snapshot",
+			"category": "data",
+			"definition": "A saved machine or filesystem state that can be restored or used to create another instance.",
+			"example": "Take a snapshot before installing a new dependency."
+		},
+		{
+			"word": "Database",
+			"category": "data",
+			"definition": "A service that stores and queries structured application records.",
+			"example": "Save customer accounts in Postgres rather than a temporary file."
+		},
+		{
+			"word": "Model",
+			"category": "agents",
+			"definition": "The system that predicts and generates the agent’s next response.",
+			"example": "Switching the model changes reasoning, not the sandbox filesystem."
+		},
+		{
+			"word": "Harness",
+			"category": "agents",
+			"definition": "The program that coordinates a model, its tools and its execution loop.",
+			"example": "A coding harness reads files and runs commands on behalf of the model."
+		},
+		{
+			"word": "Tool",
+			"category": "agents",
+			"definition": "A defined action an agent can request through a controlled interface.",
+			"example": "The file-reading tool returns the contents of a source file."
+		},
+		{
+			"word": "Runtime",
+			"category": "runtimes",
+			"definition": "The environment and software that execute a workload.",
+			"example": "A Python workload needs a runtime with the required interpreter and packages."
+		},
+		{
+			"word": "Image",
+			"category": "runtimes",
+			"definition": "A packaged filesystem and configuration used to start an environment.",
+			"example": "Build a container image once and run the same image in staging."
+		},
+		{
+			"word": "Environment variable",
+			"category": "runtimes",
+			"definition": "A named configuration value available to a process when it runs.",
+			"example": "Keep your database connection string in server configuration instead of hard-coding it."
+		},
+		{
+			"word": "Usage",
+			"category": "billing",
+			"definition": "The measured resources consumed by a workload over time.",
+			"example": "A running machine accumulates compute usage."
+		},
+		{
+			"word": "Credit",
+			"category": "billing",
+			"definition": "A unit of balance that can be applied to a service’s charges.",
+			"example": "This reconstruction shows practice credits, not a real account balance."
+		},
+		{
+			"word": "Quota",
+			"category": "billing",
+			"definition": "A limit on how many resources or how much usage is allowed.",
+			"example": "Limit a workspace to five simultaneous sandboxes."
+		},
+		{
+			"word": "Tenant",
+			"category": "builders",
+			"definition": "A customer boundary inside a product that serves multiple customers.",
+			"example": "Keep each customer’s data and permissions scoped to their tenant."
+		},
+		{
+			"word": "Binding",
+			"category": "builders",
+			"definition": "An explicit connection between an application and a resource it uses.",
+			"example": "Bind a deployment to its database configuration."
+		},
+		{
+			"word": "White-label",
+			"category": "builders",
+			"definition": "A product integration presented with your own name and identity.",
+			"example": "Show a branded preview panel inside your customer portal."
+		}
+	],
+	"units": [
+		{
+			"id": "words",
+			"title": "The words",
+			"subtitle": "Put the right name on each building block.",
+			"reward": 5,
+			"icon": "book",
+			"type": "match"
+		},
+		{
+			"id": "model",
+			"title": "How MIOSA fits together",
+			"subtitle": "Connect the workspace, sandbox and deployment.",
+			"reward": 5,
+			"icon": "network",
+			"type": "sequence"
+		},
+		{
+			"id": "sandbox",
+			"title": "Your first sandbox",
+			"subtitle": "Create, pause, snapshot and restore a machine.",
+			"reward": 7,
+			"icon": "box",
+			"type": "sandbox"
+		},
+		{
+			"id": "shipping",
+			"title": "Shipping",
+			"subtitle": "Take a tested version from preview to release.",
+			"reward": 7,
+			"icon": "rocket",
+			"type": "sequence"
+		},
+		{
+			"id": "fleet",
+			"title": "Running a fleet",
+			"subtitle": "Keep useful machines running within a budget.",
+			"reward": 8,
+			"icon": "server",
+			"type": "sandbox"
+		},
+		{
+			"id": "connections",
+			"title": "Connecting things",
+			"subtitle": "Give each resource its correct connection.",
+			"reward": 8,
+			"icon": "plug",
+			"type": "match"
+		},
+		{
+			"id": "product",
+			"title": "Building a product",
+			"subtitle": "Keep customer boundaries intact as you ship.",
+			"reward": 10,
+			"icon": "layers",
+			"type": "sequence"
+		}
+	],
+	"videos": [
+		"Quickstart",
+		"Sandboxes",
+		"Machines",
+		"Computers",
+		"Browser",
+		"Agents",
+		"Deploy",
+		"Data",
+		"Build",
+		"Platforms",
+		"Organization",
+		"Pricing"
+	]
+}
